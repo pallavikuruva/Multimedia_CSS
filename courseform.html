@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="FN">First Name</label></td>
+            <td>
+              <input
+                type="text"
+                placeholder="Ex: xxxx"
+                name="FN"
+                value=""
+                maxlength="25"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="SN">Sur Name</label></td>
+            <td>
+              <input
+                type="text"
+                placeholder="Ex:Park"
+                name="SN"
+                maxlength="25"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="PN">Phone</label></td>
+            <td>
+              <input
+                type="tel"
+                placeholder="Ex:+91 5241638879"
+                name="PN"
+                maxlength="10"
+                required
+              />
+            </td>
+          </tr>
+          <td><label for="age">Age</label></td>
+          <td>
+            <input
+              type="number"
+              placeholder="Ex: 21"
+              name="age"
+              value=""
+              min="18"
+              max="65"
+            />
+          </td>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input
+                type="email"
+                placeholder="Ex: rty@gmail.com"
+                name="email"
+                value=""
+                maxlength="35"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input
+                type="password"
+                placeholder="Ex:4567899ry"
+                name="password"
+                value=""
+                maxlength="10"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Confirm Password</label></td>
+            <td>
+              <input
+                type="password"
+                placeholder="Ex:4567899ry"
+                name="password"
+                value=""
+                maxlength="10"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">DOB</label></td>
+            <td>
+              <input
+                type="date"
+                placeholder="Ex:dd-mm-yyyy"
+                name="dob"
+                value=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="g">Gender</label></td>
+            <td>
+              <input type="radio" value="Male" name="g" />Male
+              <input type="radio" value="Female" name="g" />Female
+              <input type="radio" value="Other" name="g" />Other
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Select Country</label></td>
+            <td>
+              <select name="Country">
+                <option value="None">None</option>
+                <option value="INDIA">INDIA</option>
+                <option value="UK">UK</option>
+                <option value="USA">USA</option>
+                <option value="EUROPE">EUROPE</option>
+                <option value="AUSTRALIA">AUSTRALIA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pic">Upload Picture</label></td>
+            <td><input type="file" name="pic" id="pic" /></td>
+          </tr>
+          <tr>
+            <td><button>Reset</button></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <table>
+          <tr>
+            <td>
+              <label for="">Select Course</label>
+            </td>
+            <td>
+              <select name="Course" id="">
+                <option value="Java Full Stack">Java Full Stack</option>
+                <option value="Python Full Stack">Python Full Stack</option>
+                <option value="Mern Stack">Mern Stack</option>
+                <option value="Data Science">Data Science</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Mode</label></td>
+            <td>
+              <input type="radio" value="Online" />Online
+              <input type="radio" value="Offline" />Offline
+            </td>
+          </tr>
+          <td><label for="FN">SKILLS</label></td>
+          <td>
+            <input
+              type="text"
+              placeholder="Ex: xxxx"
+              name="FN"
+              value="HTML5"
+              maxlength="25"
+              readonly
+            />
+          </td>
+          <tr>
+            <td>
+              <label for="">Comments</label>
+            </td>
+            <td>
+              <form>
+                <label for="feedback">Feedback:</label><br />
+                <textarea
+                  id="feedback"
+                  name="feedback"
+                  rows="6"
+                  cols="50"
+                ></textarea>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td><button>Submit</button></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
